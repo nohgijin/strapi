@@ -17,7 +17,10 @@
     "@strapi/plugin-users-permissions": "4.0.5",
     "@strapi/strapi": "4.0.5",
     "mysql": "^2.18.1",
-    "sqlite3": "5.0.2"
+    "parse": "^3.4.1",
+    "pg-connection-string": "^2.5.0",
+    "sqlite3": "5.0.2",
+    "strapi-plugin-ckeditor5": "^2.0.0-rc.2"
   },
   "author": {
     "name": "A Strapi developer"
