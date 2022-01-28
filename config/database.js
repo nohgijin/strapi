@@ -8,8 +8,14 @@ module.exports = ({ env }) => {
         database: env("DATABASE_NAME", process.env.NAME),
         user: env("DATABASE_USERNAME", process.env.USERNAME),
         password: env("DATABASE_PASSWORD", process.env.PASSWORD),
+        ssl: {
+          rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false), // For self-signed certificates
+        },
       },
       debug: false,
+      options: {
+        ssl: env.bool("DATABASE_SSL", false),
+      },
     },
   };
 };
